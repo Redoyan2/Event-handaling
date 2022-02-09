@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text-box"></p>
+    <button id="text-btn">Add Text</button>
+    <button id="remove-text">Remove Text</button>
+
+
+    <script>
+        // document.getElementById('text-btn').onclick=function(){
+        //     document.getElementById('text-box').innerText='Hi prithy I love you';
+        //     document.body.style.backgroundColor = 'purple';
+        // }
+        // document.getElementById('text-btn').onfocus=function(){
+        //     document.getElementById('text-box').innerText='Hi prithy I love you';
+        //     document.body.style.backgroundColor = 'yellow';
+        // }
+            // add text 
+        const textBox = document.getElementById('text-box');
+        const textBtn = document.getElementById('text-btn');
+        textBtn.onclick = addText;
+        function addText(){
+            textBox.innerText='I Love you prithy';
+        }
+
+// remove text 
+
+        const removeButton = document.getElementById('remove-text');
+        removeButton.addEventListener('click', function(){
+            textBox.innerText='';
+        })
+    </script>
+</body>
+</html>
